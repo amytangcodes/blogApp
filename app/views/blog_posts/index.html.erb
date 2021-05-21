@@ -1,6 +1,8 @@
 <h1>Blog Posts</h1>
 <ul>
   <% @blog_posts.each do |post| %>
-    <li><%= link_to(post.title, blog_post_path(post)) %></li>
+    <li>
+      <%= link_to(post.title, blog_post_path(post)) %>
+    </li>
   <% end %>
 </ul>
