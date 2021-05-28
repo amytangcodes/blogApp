@@ -9,6 +9,7 @@ class BlogPostsController < ApplicationController
     # "hey".inspect
     # raise params.inspect
     @blog_post = BlogPost.find(params[:id])
+    @comment = @blog_post.comments.new
   end
 
   private
