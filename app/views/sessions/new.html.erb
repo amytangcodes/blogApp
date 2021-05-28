@@ -1,0 +1,13 @@
+<h1>Sessions</h1>
+<form method="post" action="<%= sessions_url %>"> <%# or can be sessions_path %>
+  <div>
+    <label>Email</label>
+    <input type="email" name="email" />
+  </div>
+  <div>
+    <label>Password</label>
+    <input type="password" name="password"/>
+  </div>
+
+  <button type="submit">Login</button>
+</form>

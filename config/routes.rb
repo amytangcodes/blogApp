@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :blog_posts, except: [:destroy] do
     resources :comments, only: [:create]
   end
+
+  # Log in form
+  resources :sessions, only: [:new, :create] # we dont care about showing a session
 end
